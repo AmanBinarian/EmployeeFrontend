@@ -1,0 +1,30 @@
+<div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold my-10 text-center tracking-wider underline underline-offset-8">List of Employees</h1>
+  
+    <table class="table-auto w-full border-collapse border border-gray-300" *ngIf="users.length > 0">
+      <thead>
+        <tr class="bg-gray-800 text-white ">
+          <th class="border border-gray-300 text-xl px-4 py-4 tracking-widest">ID</th>
+          <th class="border border-gray-300 text-xl px-4 py-4 tracking-widest">User Name</th>
+          <th class="border border-gray-300 px-4 text-xl py-4 tracking-widest">Password</th>
+          <th class="border border-gray-300 px-4 text-xl py-4 tracking-widest">Role</th>
+          <th class="border border-gray-300 px-4 text-xl py-4 tracking-widest">Department</th>
+        </tr>
+      </thead>
+      <span class="my-4"></span>
+      <tbody >
+        <tr *ngFor="let a of users; let i = index" [ngClass]="{'bg-white': i % 2 === 0, 'bg-gray-200': i % 2 !== 0}" class="hover:bg-gray-400 text-center">
+          <td class="border border-gray-300 px-4 py-2 text-center">{{ a.id }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ a.username }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ a.password }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ a.role }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ a.department }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p *ngIf="users.length === 0" class="text-center text-gray-500">
+      No users available.
+    </p>
+  </div>
+  

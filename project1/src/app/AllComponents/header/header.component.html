@@ -1,0 +1,32 @@
+ <div id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    <div class="h-full px-3 py-4 overflow-y-auto bg-black">
+       <ul class="space-y-2 font-medium">
+          <li>
+             <a href="/" class="flex items-center p-2 text-red-500 rounded-lg text-4xl font-semibold">
+                <span class="ml-3 underline underline-offset-8 outline-2 outline-dotted p-1 outset shadow-gray-400 shadow-lg rounded-lg">Dashboard</span>
+             </a> </li>
+          <li class="pt-5">
+             <a href="/users" class="flex items-center p-2 text-red-100 rounded-lg hover:bg-gray-800">
+                <svg class="flex-shrink-0 w-5 h-5 text-red-100 transition duration-75  group-hover:text-red-700 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                   <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                </svg>
+                <span class="ml-3 text-xl">All Users</span>
+             </a> </li>
+          <li>
+            <a href="/fetch" class="flex items-center p-2 text-red-100 rounded-lg hover:bg-gray-800">
+                <mat-icon class="">info-circle</mat-icon>
+               <span class=" ml-3 text-xl">Get User Detail</span>
+            </a> </li>
+         <li>
+            <a href="/add" class="flex items-center p-2 text-red-100 rounded-lg hover:bg-gray-800">
+                <mat-icon class="">add</mat-icon>
+                <span class=" ml-3 text-xl">Add New User</span>
+             </a> </li> 
+          <li>
+            <a href="/update" class="flex items-center p-2 text-red-100 rounded-lg hover:bg-gray-800">
+                <mat-icon class="">update</mat-icon>
+                <span class=" ml-3 text-xl">Update User</span>
+             </a></li>  
+       </ul>
+    </div>
+ </div>

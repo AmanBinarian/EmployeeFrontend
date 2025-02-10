@@ -1,0 +1,26 @@
+<!-- app.component.html -->
+<div class="flex flex-col h-screen">
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Employee Credential Management</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="/input" routerLinkActive="text-blue-400" class="hover:text-blue-500">Input</a></li>
+          <li><a href="/details" routerLinkActive="text-blue-400" class="hover:text-blue-500">Details</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="flex-grow p-4 bg-gray-100">
+
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2025 Employee Management System. All Rights Reserved.</p>
+  </footer>
+</div>
